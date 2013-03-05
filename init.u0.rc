@@ -192,8 +192,7 @@ on boot
     chown system system /sys/class/input/input1/fast_calibration_z
     chown system system /sys/class/input/input1/eeprom_writing
     chown system system /sys/class/input/input1/softreset
-    chmod 0666 /sys/bus/i2c/drivers/proximity_gp2ap/3-0044/enable
-    chmod 0666 /sys/bus/i2c/drivers/proximity_gp2ap/5-0044/enable
+    chown system system /sys/devices/platform/i2c-gpio.4/i2c-4/4-0044/enable
 
     chmod 0664 /sys/class/leds/lcd-backlight/alc
     chown system system /sys/class/leds/lcd-backlight/alc
