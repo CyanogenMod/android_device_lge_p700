@@ -1,22 +1,23 @@
 import init.lge-shared.rc
 
 on boot
-    chown system system /sys/class/input/input1/range
-    chown system system /sys/class/input/input1/bandwidth
-    chown system system /sys/class/input/input1/mode
-    chown system system /sys/class/input/input1/value
-    chown system system /sys/class/input/input1/delay
-    chown system system /sys/class/input/input1/update
-    chown system system /sys/class/input/input1/selftest
-    chown system system /sys/class/input/input1/offset_filt_x
-    chown system system /sys/class/input/input1/offset_filt_y
-    chown system system /sys/class/input/input1/offset_filt_z
-    chown system system /sys/class/input/input1/fast_calibration_x
-    chown system system /sys/class/input/input1/fast_calibration_y
-    chown system system /sys/class/input/input1/fast_calibration_z
-    chown system system /sys/class/input/input1/eeprom_writing
-    chown system system /sys/class/input/input1/softreset
-    chown system system /sys/devices/platform/i2c-gpio.4/i2c-4/4-0044/enable
+    chown system system /sys/class/input/input2/range
+    chown system system /sys/class/input/input2/bandwidth
+    chown system system /sys/class/input/input2/mode
+    chown system system /sys/class/input/input2/value
+    chown system system /sys/class/input/input2/delay
+    chown system system /sys/class/input/input2/update
+    chown system system /sys/class/input/input2/selftest
+    chown system system /sys/class/input/input2/offset_filt_x
+    chown system system /sys/class/input/input2/offset_filt_y
+    chown system system /sys/class/input/input2/offset_filt_z
+    chown system system /sys/class/input/input2/fast_calibration_x
+    chown system system /sys/class/input/input2/fast_calibration_y
+    chown system system /sys/class/input/input2/fast_calibration_z
+    chown system system /sys/class/input/input2/eeprom_writing
+    chown system system /sys/class/input/input2/softreset
+    chown system system /sys/bus/i2c/drivers/proximity_gp2ap/6-0044/enable
+    chmod 0660 /sys/bus/i2c/drivers/proximity_gp2ap/6-0044/enable
 
 ## chargermode will crash badly unless USB is configured
 on property:init.svc.charger=running
