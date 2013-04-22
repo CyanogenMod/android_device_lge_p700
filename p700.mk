@@ -8,9 +8,6 @@ $(call inherit-product, frameworks/native/build/phone-hdpi-512-dalvik-heap.mk)
 PRODUCT_AAPT_CONFIG := normal hdpi
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/recovery/postrecoveryboot.sh:recovery/root/sbin/postrecoveryboot.sh
-
-PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init.u0.rc:root/init.u0.rc \
     $(LOCAL_PATH)/ueventd.u0.rc:root/ueventd.u0.rc
 
